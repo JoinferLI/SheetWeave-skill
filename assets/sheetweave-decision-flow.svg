@@ -1,6 +1,6 @@
 <svg width="1200" height="980" viewBox="0 0 1200 980" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">SheetWeave decision flow</title>
-  <desc id="desc">A decision flowchart showing overview detection, automatic label matching, manual VLM mapping, overlap fallback, bridge recovery, grouped diagnostics, and vector PDF export.</desc>
+  <title id="title">SheetWeave 决策流程图</title>
+  <desc id="desc">决策流程图：总览图检测、自动标号匹配、人工/VLM 映射、重叠匹配回退、桥接恢复、分组诊断和矢量 PDF 导出。</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="980" gradientUnits="userSpaceOnUse">
       <stop stop-color="#F8FCF8"/>
@@ -21,56 +21,56 @@
   <rect width="1200" height="980" rx="34" fill="url(#bg)"/>
   <path d="M0 820C170 760 318 804 472 754C636 700 766 612 960 660C1074 688 1146 660 1200 628V980H0V820Z" fill="#1F7A6D" fill-opacity="0.07"/>
 
-  <text x="600" y="58" text-anchor="middle" fill="#0B1720" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700">SheetWeave Decision Flow</text>
-  <text x="600" y="90" text-anchor="middle" fill="#49605A" font-family="Segoe UI, Arial, sans-serif" font-size="18">Prefer reliable overview labels. Fall back cleanly when the overview cannot solve the layout.</text>
+  <text x="600" y="58" text-anchor="middle" fill="#0B1720" font-family="Georgia, 'Times New Roman', serif" font-size="38" font-weight="700">SheetWeave 决策流程图</text>
+  <text x="600" y="90" text-anchor="middle" fill="#49605A" font-family="Segoe UI, Arial, sans-serif" font-size="18">优先使用总览图标号求解布局。当总览图无法解决时，平滑回退到其他方案。</text>
 
   <g filter="url(#shadow)" font-family="Segoe UI, Arial, sans-serif">
     <rect x="480" y="120" width="240" height="64" rx="22" fill="#FFFFFF" stroke="#D3E8DF"/>
-    <text x="600" y="159" text-anchor="middle" fill="#0B1720" font-size="21" font-weight="700">Source PDF</text>
+    <text x="600" y="159" text-anchor="middle" fill="#0B1720" font-size="21" font-weight="700">图纸 PDF</text>
 
     <rect x="430" y="222" width="340" height="78" rx="24" fill="#FFFFFF" stroke="#D3E8DF"/>
-    <text x="600" y="255" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">Render previews and text</text>
-    <text x="600" y="280" text-anchor="middle" fill="#49605A" font-size="15">low DPI images plus extracted labels</text>
+    <text x="600" y="255" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">渲染预览和提取文字</text>
+    <text x="600" y="280" text-anchor="middle" fill="#49605A" font-size="15">低分辨率图像 + 提取的标号</text>
 
     <rect x="430" y="340" width="340" height="82" rx="24" fill="#FFFFFF" stroke="#1F7A6D" stroke-width="2"/>
-    <text x="600" y="374" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">Overview or index page?</text>
-    <text x="600" y="399" text-anchor="middle" fill="#49605A" font-size="15">usually first or last page</text>
+    <text x="600" y="374" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">是否有总览/索引页？</text>
+    <text x="600" y="399" text-anchor="middle" fill="#49605A" font-size="15">通常是首页或末页</text>
 
     <rect x="430" y="466" width="340" height="86" rx="24" fill="#FFFFFF" stroke="#1F7A6D" stroke-width="2"/>
-    <text x="600" y="501" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">Can labels solve it?</text>
-    <text x="600" y="527" text-anchor="middle" fill="#49605A" font-size="15">machine-readable, visible-only, or absent</text>
+    <text x="600" y="501" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">标号能否解决布局？</text>
+    <text x="600" y="527" text-anchor="middle" fill="#49605A" font-size="15">机器可读、人眼可见、或无标号</text>
 
     <rect x="70" y="604" width="290" height="94" rx="24" fill="#FFFFFF" stroke="#D3E8DF"/>
-    <text x="215" y="639" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">Manual or VLM JSON</text>
-    <text x="215" y="665" text-anchor="middle" fill="#49605A" font-size="15">visible labels, not extractable</text>
+    <text x="215" y="639" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">人工/VLM 生成布局 JSON</text>
+    <text x="215" y="665" text-anchor="middle" fill="#49605A" font-size="15">标号可见但代码无法提取</text>
 
     <rect x="455" y="604" width="290" height="94" rx="24" fill="#FFFFFF" stroke="#D3E8DF"/>
-    <text x="600" y="639" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">Auto label mapping</text>
-    <text x="600" y="665" text-anchor="middle" fill="#49605A" font-size="15">PDF text gives sheet codes</text>
+    <text x="600" y="639" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">自动标号映射</text>
+    <text x="600" y="665" text-anchor="middle" fill="#49605A" font-size="15">通过 PDF 文字提取图纸编号</text>
 
     <rect x="840" y="604" width="290" height="94" rx="24" fill="#FFFFFF" stroke="#D3E8DF"/>
-    <text x="985" y="639" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">Overlap matching</text>
-    <text x="985" y="665" text-anchor="middle" fill="#49605A" font-size="15">no overview, no labels, or weak matches</text>
+    <text x="985" y="639" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">重叠区域匹配</text>
+    <text x="985" y="665" text-anchor="middle" fill="#49605A" font-size="15">无总览图、无标号、或匹配不足</text>
 
     <rect x="430" y="746" width="340" height="78" rx="24" fill="#FFFFFF" stroke="#1F7A6D" stroke-width="2"/>
-    <text x="600" y="779" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">Build graph and solve placements</text>
-    <text x="600" y="804" text-anchor="middle" fill="#49605A" font-size="15">selected edges become page transforms</text>
+    <text x="600" y="779" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">构建关系图并求解位置</text>
+    <text x="600" y="804" text-anchor="middle" fill="#49605A" font-size="15">选中的边转化为页面变换</text>
 
     <rect x="430" y="862" width="340" height="78" rx="24" fill="#FFFFFF" stroke="#1F7A6D" stroke-width="2"/>
-    <text x="600" y="895" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">Single connected component?</text>
-    <text x="600" y="920" text-anchor="middle" fill="#49605A" font-size="15">otherwise keep diagnostics visible</text>
+    <text x="600" y="895" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">是否为单个连通组件？</text>
+    <text x="600" y="920" text-anchor="middle" fill="#49605A" font-size="15">否则保留诊断信息</text>
 
     <rect x="80" y="858" width="270" height="86" rx="24" fill="#FFFFFF" stroke="#D3E8DF"/>
-    <text x="215" y="892" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">Bridge recovery</text>
-    <text x="215" y="918" text-anchor="middle" fill="#49605A" font-size="15">targeted high-DPI checks</text>
+    <text x="215" y="892" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">桥接恢复</text>
+    <text x="215" y="918" text-anchor="middle" fill="#49605A" font-size="15">定向高 DPI 检查</text>
 
     <rect x="850" y="858" width="270" height="86" rx="24" fill="url(#dark)"/>
-    <text x="985" y="892" text-anchor="middle" fill="#F8FCF8" font-size="20" font-weight="700">Vector merged PDF</text>
-    <text x="985" y="918" text-anchor="middle" fill="#FFE2A6" font-size="15">original pages on TikZ canvas</text>
+    <text x="985" y="892" text-anchor="middle" fill="#F8FCF8" font-size="20" font-weight="700">矢量合成 PDF</text>
+    <text x="985" y="918" text-anchor="middle" fill="#FFE2A6" font-size="15">原始页面嵌入 TikZ 画布</text>
 
     <rect x="80" y="746" width="270" height="78" rx="24" fill="#FFF9EA" stroke="#F1C376" stroke-width="2"/>
-    <text x="215" y="779" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">Groups and summary</text>
-    <text x="215" y="804" text-anchor="middle" fill="#49605A" font-size="15">review unresolved components</text>
+    <text x="215" y="779" text-anchor="middle" fill="#0B1720" font-size="20" font-weight="700">分组输出和诊断</text>
+    <text x="215" y="804" text-anchor="middle" fill="#49605A" font-size="15">检查未解决的组件</text>
   </g>
 
   <g stroke="#1F7A6D" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)">
@@ -93,23 +93,23 @@
   <path d="M770 381C894 394 985 460 985 592" stroke="#1F7A6D" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
   <g font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">
     <rect x="618" y="436" width="42" height="24" rx="12" fill="#1F7A6D"/>
-    <text x="639" y="453" text-anchor="middle" fill="#FFFFFF">yes</text>
+    <text x="639" y="453" text-anchor="middle" fill="#FFFFFF">是</text>
     <rect x="834" y="410" width="96" height="25" rx="12.5" fill="#F1C376"/>
-    <text x="882" y="428" text-anchor="middle" fill="#0B1720">no overview</text>
+    <text x="882" y="428" text-anchor="middle" fill="#0B1720">无总览图</text>
     <rect x="290" y="570" width="86" height="25" rx="12.5" fill="#F1C376"/>
-    <text x="333" y="588" text-anchor="middle" fill="#0B1720">visible only</text>
+    <text x="333" y="588" text-anchor="middle" fill="#0B1720">人眼可见</text>
     <rect x="537" y="570" width="126" height="25" rx="12.5" fill="#1F7A6D"/>
-    <text x="600" y="588" text-anchor="middle" fill="#FFFFFF">machine-readable</text>
+    <text x="600" y="588" text-anchor="middle" fill="#FFFFFF">机器可读</text>
     <rect x="800" y="570" width="105" height="25" rx="12.5" fill="#F1C376"/>
-    <text x="852" y="588" text-anchor="middle" fill="#0B1720">no labels</text>
+    <text x="852" y="588" text-anchor="middle" fill="#0B1720">无标号</text>
 
     <rect x="786" y="876" width="43" height="25" rx="12.5" fill="#1F7A6D"/>
-    <text x="807" y="894" text-anchor="middle" fill="#FFFFFF">yes</text>
+    <text x="807" y="894" text-anchor="middle" fill="#FFFFFF">是</text>
     <rect x="371" y="876" width="43" height="25" rx="12.5" fill="#F1C376"/>
-    <text x="392" y="894" text-anchor="middle" fill="#0B1720">no</text>
+    <text x="392" y="894" text-anchor="middle" fill="#0B1720">否</text>
     <rect x="348" y="824" width="72" height="25" rx="12.5" fill="#1F7A6D"/>
-    <text x="384" y="842" text-anchor="middle" fill="#FFFFFF">re-solve</text>
+    <text x="384" y="842" text-anchor="middle" fill="#FFFFFF">重新求解</text>
     <rect x="232" y="832" width="72" height="25" rx="12.5" fill="#F1C376"/>
-    <text x="268" y="850" text-anchor="middle" fill="#0B1720">still split</text>
+    <text x="268" y="850" text-anchor="middle" fill="#0B1720">仍断开</text>
   </g>
 </svg>
